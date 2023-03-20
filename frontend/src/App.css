@@ -1,0 +1,1134 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+.flex{
+  display: flex;
+}
+body{
+  margin: 0;
+  font-family:  Arial, sans-serif, Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+/* Register Page */
+.registerContainer, .loginContainer{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.twitterLogo{
+  max-width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7.5rem;
+}
+
+.registerTitle{
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.registerBtn{
+
+  background-color: #121212;
+  color: whitesmoke;
+  padding: 0.5rem;
+  width: 18rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.registerBtn:hover{
+ background-color: #2e2b2b;
+}
+.uselessInfo, .loginPrompt{
+  font-size: 12px;
+  margin-top: 1rem;
+  max-width: 18rem;
+  color: gray;
+}
+.loginPrompt{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form-group label {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 3px;
+}
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Login Page */
+.twitterlogo{
+  max-width: 3rem;
+}
+.loginTitle{
+  margin-top: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+a{
+  margin-left: 5px;
+}
+/* Right Sidebar */
+@media only screen and (max-width: 650px) { 
+  .rightSidebarContanier { 
+    display: none; 
+  } 
+}
+.rightSidebarContanier{
+  width: 25vw;
+  max-width: 25vw;
+  border-right: 2px solid whitesmoke;
+  font-size: 1.25rem;
+}
+.newsContainer{
+  margin-right: 1rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+}
+.what{
+  font-weight: bold;
+  font-size: 22px;
+}
+a{
+  color: black;
+}
+a:visited { 
+  color: black ;
+}
+.newsTitle{
+  font-size: 12px;
+  
+}
+.newsItem{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+li{
+  list-style: none;
+  margin-left: 0;
+}
+
+/* Home Page & Sidebar*/
+@media only screen and (max-width: 550px) { 
+  .sidebarContainer { 
+    display: none; 
+  } 
+}
+.sidebarContainer{
+  height: 100%;
+  width: 19rem;
+  border-right: 2px solid whitesmoke;
+  font-size: 1.25rem;
+  position: sticky;
+  top:0;
+   
+}
+@media only screen and (max-width: 1026px) { 
+  .feedContainer { 
+    width: 100%; 
+  } 
+  .fixedContainer{
+    width: 100%;
+  }
+  .headingContainer{
+    width: 100%;
+  }
+}
+.feedContainer{
+  margin-left: 1rem;
+  min-width: 45vw;
+  margin-right: 1rem;
+  border-right: 2px solid whitesmoke;
+}
+.sidebarTabs{
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  row-gap: 1rem ;
+  flex-direction: column;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  
+}
+.homeTab, .notificationTab, .messageTab, .memberTab, .profileTab, .tweetTab{
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.homeTab:hover, .notificationTab:hover, .messageTab:hover, .memberTab:hover, .profileTab:hover{
+  background-color: lightgray;
+  border-radius: 20px;
+  width: fit-content;
+}
+.homeSearch{
+ 
+  width: 90%;
+  border:none; 
+  border-radius: 15px;
+  background-color: white;
+}
+.homeSearch:focus{
+  outline-offset: none  ;
+  outline: none;
+}
+.search:focus{
+  outline-offset: none  ;
+  outline: none;
+}
+.twitterLogoHome{
+  width: 2rem ;
+  margin-left: 4px;
+  cursor: pointer;
+  padding: 8px;
+}
+.twitterLogoHome:hover{
+  background-color:#a9d3ed;
+  border-radius: 20px;
+
+}
+.verifyBadge{
+  width: 1.1rem;
+  margin-left: 2px;
+}
+.icons{
+  width: 2rem;
+  margin-right: 1rem;
+}
+.tweetTab{
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 25px;
+  padding: 1rem;
+  width: 10rem;
+  justify-content: center;
+}
+.userInfoContainer{
+  display: flex;
+  margin-top: 3rem;
+
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.userInfoContainer:hover{
+  background-color: #a9d3ed;
+  border-radius: 35px;
+
+}
+.profileIcon{
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.logoutContainer{
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 4rem;
+  width: 12rem;
+  height: 2rem;
+  border-color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoutBtn{
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 10rem;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.logoutBtn:hover{
+  background-color: lightgray;
+}
+.tweetInfo{
+  display: flex;
+  flex-direction: column;
+}
+.userinfoname{
+  font-weight: bold ;
+  font-size: 18px;
+}
+.userinfoTab{
+  font-size: 15px;
+  color: rgb(83, 100, 113);
+}
+.headingContainer{
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 45vw;
+  background-color: whitesmoke;
+  border-radius: 2.5px;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-left: 0;
+  position: sticky;
+  top: 0rem;
+}
+.tweetHome{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+}
+.homeTitle{
+ font-size: 1.5rem;
+ margin-left: 1rem;
+}
+.fixedContainer{
+  position: sticky ;
+}
+@media only screen and (max-width: 600px) { 
+  .postContainer { 
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  } 
+}
+@media only screen and (min-width: 601px) { 
+  .postContainer { 
+    margin-top: 1rem;
+  } 
+}
+.globalBtn, .followingBtn{
+  border-radius: 20px;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 1rem;
+  background: transparent;
+  border: none !important;
+  
+
+}
+.globalBtn:hover, .followingBtn:hover{
+  background-color: whitesmoke;
+}
+
+.userTweet{
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border-bottom: 2px solid whitesmoke; ;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+.userTweet:hover{
+  background-color:#f2f2f2;
+}
+.tweetContent{
+  margin-top: 5px;
+}
+.commentBox{
+  width: 1.2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  padding: 0.3rem;
+
+}
+.commentBox:hover{
+   background-color:#a9d3ed;
+   border-radius: 20px;
+}
+.popupComment{
+  display: flex;
+  justify-content:flex-start;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.replierInformation{
+  display: flex;
+  flex-direction: column;
+}
+.replierContainer{
+  display: flex;
+  margin-top: 0.5rem;
+}
+.replierProfileIcon{
+  max-width: 3rem;
+  max-height: 3rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+
+}
+.replyBox{
+  width: 18rem;
+  height: 2rem;
+}
+.replies{
+  border-top: 0.1px solid lightgray;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+.replyingTo{
+  color: rgb(75, 71, 71);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.blue{
+  color: #1DA1F2;
+}
+.commentOnTweet{
+  width: 30rem;
+  height: 2rem;
+}
+.likeBox{
+  width: 1.2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.likeBox:hover{
+ background-color: lightcoral;
+ border-radius: 20px;
+}
+.tweetInteraction{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 45vw;
+  margin-top: 0.5rem;
+}
+.numberInteractions{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Profile Page */
+.coverPictureContainer{
+  width: 100%;
+  max-height: 12rem;
+  position: absolute;
+  z-index: 1;
+  margin-left: -1rem;
+  padding-right: 1rem;
+
+}
+.profilePictureContainer{
+  min-width: 9rem;
+  min-height: 9rem;
+  max-width: 9rem;
+  max-height: 9rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  z-index: 2;
+  top:6.5rem; 
+  left: 1rem;
+
+}
+.bioContainer{
+  margin-top: 7rem;
+}
+
+.joinedDate{
+  display: flex;
+  align-items: center;
+  color: rgb(83, 100, 113);
+  font-size: 15px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.calendarContainer{
+  max-width: 1rem;
+  margin-right: 0.5rem;
+}
+.editProfile{
+  position: relative;
+  top:13rem;
+  z-index: 3;
+  left: 70%;
+  display: flex;
+  align-items: center;
+  width: 6rem;
+}
+.editProfileBtn{
+  font-weight: bold;
+  background-color: white;
+  color:#121212;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-color: rgb(207, 217, 222);
+  outline-style: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.editMsgBtn{
+  width: 1.3rem;
+  margin-left: 2px;
+  font-weight: bold;
+  background-color: white;
+  color:#121212;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-color: rgb(207, 217, 222);
+  outline-style: none;
+  cursor: pointer;
+
+}
+.userProfileInfo{
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+
+}
+.backBanner{
+  font-size: 18px;
+  font-weight: bold;
+  height: 53px;
+  z-index: 5;
+  width: 100%;
+  margin-left: -1rem;
+  padding-right: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+.smallbackArrow{
+  width: 1.1rem;
+  margin-left: 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.smallbackArrow:hover{
+  background-color: lightgray;
+}
+.backarrow{
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.backarrow:hover{
+  background-color:lightgray;
+}
+.editProfileBtn:hover{
+  background-color: whitesmoke;
+}
+@media only screen and (max-width: 600px) { 
+  .editPopupModal { 
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+  } 
+}
+@media only screen and (min-width: 601px) { 
+  .editPopupModal{
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+  
+  }
+}
+
+.uploadBtn{
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 14rem;
+  max-width: 26rem;
+}
+.myBio{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.userDetailsBio{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.userDetails{
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.lightText{
+  color: rgb(83, 100, 113);
+  font-size: 15px;
+}
+
+.boldText{
+  font-size: 15px;
+  font-weight: bold;
+}
+.followContainer{
+  display: flex;
+  font-size: 0.8rem;
+
+}
+.followerCount{
+  margin-left: 1rem;
+
+}
+.bold{
+  font-weight: bold;
+  display: flex;
+  font-size: 18px;
+  margin-right: 5px;
+  
+}
+.boldUnderline{
+  font-weight: bold;
+  display: flex;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.boldUnderline:hover{
+  text-decoration: underline;
+}
+.ownTweetContainer{
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.sameline{
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.ownTweet{
+  border-top: 0.1px solid lightgray;
+  font-size: 1.1rem;
+}
+.mycomment{
+  width: 1.1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+}
+.mycomment:hover{
+  background-color:#a9d3ed;
+  border-radius: 20px;
+}
+.myheart{
+  width: 1.1rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.myheart:hover{
+  background-color: lightcoral;
+  border-radius: 20px;
+ }
+/* Create Tweet Popup */
+.tweetBox{
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+
+}
+.tweetBtn{
+  margin-top: 1rem;
+  position: relative;
+  left: 21rem;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 4rem;
+  height: 1.6rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tweetBtnHome{
+  margin: 1rem;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 4rem;
+  height: 1.6rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tweetContainer{
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 14rem;
+  max-width: 26rem;
+}
+.form-control-tweet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  min-width: 25rem;
+  border: 0.5px solid black;
+}
+.form-control-tweet-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5rem;
+  min-width: 5.5rem;
+  width: 15rem;
+  border: 0.5px solid black;
+}
+.closeBtn{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+ 
+}
+.closeBtn:hover{
+  transform: scale(1.1) perspective(1px)
+  
+}
+.form-group-tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group-tweet-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+/* Verify Popup */
+.blueMemberTitle{
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+.verifyContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group-verify{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-group-verify fieldset{
+	border: none;
+}
+.form-group-verify legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-group-verify label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-group-verify input[type="text"],
+.form-group-verify input[type="date"],
+.form-group-verify input[type="datetime"],
+.form-group-verify input[type="email"],
+.form-group-verify input[type="number"],
+.form-group-verify input[type="search"],
+.form-group-verify input[type="time"],
+.form-group-verify input[type="url"],
+.form-group-verify textarea,
+.form-group-verify select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+
+}
+.form-group-verify input[type="text"]:focus,
+.form-group-verify input[type="date"]:focus,
+.form-group-verify input[type="datetime"]:focus,
+.form-group-verify input[type="email"]:focus,
+.form-group-verify input[type="number"]:focus,
+.form-group-verify input[type="search"]:focus,
+.form-group-verify input[type="time"]:focus,
+.form-group-verify input[type="url"]:focus,
+.form-group-verify textarea:focus,
+.form-group-verify select:focus{
+	background: #d2d9dd;
+}
+.form-group-verify select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-group-verify .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-group-verify input[type="submit"],
+.form-group-verify input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-group-verify input[type="submit"]:hover,
+.form-group-verify input[type="button"]:hover
+{
+	background: #109177;
+}
+/* Message Page */
+.feedMessageContainer{
+  min-width: 30vw;
+  max-width: 30vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.messageTitle{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+}
+.gray{
+  background-color: whitesmoke;
+  margin-top: 1rem;
+}
+.searchBox{
+  position: sticky;
+  top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  padding: 10px 0;
+  border: 1px solid gray; 
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+.msgSearchBox{
+  position: sticky;
+  top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  padding: 10px 0;
+  border: 1px solid gray; 
+  border-radius: 15px;
+}
+.search{
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 15px;
+  
+}
+.searchBar{
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  height: 1.4rem;
+}
+.usersSearched{
+  font-size: 18px;
+  border-bottom: 2px solid whitesmoke;
+  margin: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 5rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.messageBox{
+  font-size: 16px;
+  border-left: 1px solid lightgray;
+}
+.recieverInfo{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.recieverfirstname{
+  font-weight: bold;
+}
+.pfp{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.recieverBio{
+  margin-top: 1rem;
+}
+.recieverBox{
+  display: flex;
+  margin-top: 1rem;
+}
+.conversationName{
+  max-width: 7rem;
+  
+}
+.conversationDetails{
+  display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.recentMessage{
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.conversationBox{
+  font-size: 20px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.conversationBox:hover{
+  background-color: rgb(222, 219, 219);
+}
+.recentMessage{
+  font-size: 16px ;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.message.own{
+  align-items: flex-end;
+  background-color: #1DA1F2;
+  color: white;
+  margin-left: 35%;
+
+}
+.message.theirs{
+  background-color: rgb(245, 241, 241);
+  margin-right: 35%;
+}
+
+.p.own{
+  width: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+.p.theirs{
+  width: 2rem;
+  margin-right: 1rem;
+}
+.chatBoxWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 651px) { 
+  .chatBoxTop {
+    height: 85vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 650px) { 
+  .chatBoxTop {
+    height: 65vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+}
+
+
+.chatBoxBottom {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+}
+
+.chatSubmitButton {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noConversationText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.message.own{
+  align-items: flex-end;
+}
+.sendBtn{
+  width: auto;
+  height: 30px;
+}
+.lightTextMessage{
+  font-size: 12px;
+}
