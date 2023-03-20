@@ -24,23 +24,6 @@ const getAllTweets = asyncHandler(async (req,res) => {
   }
 })
 
-/*/ Get Tweets from ppl I follow, GET /twetter/home/feed
-
-  const getTweetsFromFollowing = asyncHandler(async (req,res) =>  {
-    try {
-      const currentUser = await User.findById(req.user.id);
-      const userPosts = await Tweet.find({ user: currentUser._id });
-      const followingsPosts = await Promise.all(
-        currentUser.followings.map((followerId) => {
-          return Tweet.find({ user: followerId });
-        })
-      );
-      res.json(userPosts.concat(...followingsPosts))
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
-*/
 const getTweetsFromFollowing = asyncHandler(async (req,res) =>  {
   try {
     const currentUser = await User.findById(req.user.id)
