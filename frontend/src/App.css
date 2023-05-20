@@ -174,7 +174,7 @@ li{
     width: 100%; 
   } 
   .fixedContainer{
-    width: 100%;
+    width: 95%;
   }
   .headingContainer{
     width: 100%;
@@ -537,6 +537,24 @@ li{
   cursor: pointer;
 
 }
+.editInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editInfoBox form {
+  flex-grow: 1;
+}
+
+.editInfoBox input {
+  width: 50%;
+}
+
+.editInfoBox button {
+  margin-left: 10px; 
+  width: 7rem;
+}
 .userProfileInfo{
   font-size: 20px;
   display: flex;
@@ -764,6 +782,7 @@ li{
   min-width: 5.5rem;
   width: 15rem;
   border: 0.5px solid black;
+  border-radius: 6px;
 }
 .closeBtn{
   position: absolute;
@@ -917,6 +936,16 @@ li{
   align-items: center;
   justify-content: space-between;
   width: 30vw;
+}
+@media only screen and (max-width: 600px) { 
+  .messageTitle { 
+    font-size: 1rem;
+
+  } 
+  .chatMessageInput{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
 }
 .gray{
   background-color: whitesmoke;
@@ -1082,6 +1111,12 @@ li{
     overflow-y: scroll;
     padding-right: 10px;
   }
+  .messageBox{
+    height: 99vh;
+  }
+  .chatBoxWrapper{
+    height: 95%;
+  }
 }
 
 
@@ -1109,6 +1144,8 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .noConversationText{
   display: flex;
@@ -1132,3 +1169,50 @@ li{
 .lightTextMessage{
   font-size: 12px;
 }
+.mobileSidebarContainer{
+  height: 100%;
+  width: 14vw;
+  border-right: 2px solid whitesmoke;
+  font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+  display: none;
+}
+@media only screen and (max-width: 550px){
+
+.mobileSidebarContainer {
+    display: block;
+}
+.sidebarTabs{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+ 
+}
+}
+@media only screen and (max-width: 650px){
+
+  .lightText{
+    font-size: 12px;
+  }
+  .feedContainer{
+    margin-right: 0rem;
+  }
+  .editProfile{
+    flex-direction: column;
+  }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .mobileSidebarContainer{
+      padding-right: 1rem;
+
+    }
+    .userTweet{
+      font-size: 14px;
+    }
+    .homeTitle{
+      display: none;
+    }
+ 
+  }
