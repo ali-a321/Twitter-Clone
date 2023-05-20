@@ -34,7 +34,7 @@ function Sidebar(props) {
     navigate("/login")
   }
   return (
-
+  <>
    <div className='sidebarContainer'> 
         <div className="sidebarTabs"> 
         <img className='twitterLogoHome' src={twitterLogo} 
@@ -71,6 +71,35 @@ function Sidebar(props) {
         </div>
         </div>
       </div>
+         <div className='mobileSidebarContainer'> 
+         <div className="sidebarTabs"> 
+         <img className='twitterLogoHome' src={twitterLogo} 
+             alt="blue bird representing twitter logo" onClick={homeTab}/>  
+         <div className="homeTab" onClick={homeTab}> 
+           <img className='icons' src={homeLogo} alt="home logo" />   
+              </div>
+         <div className="messageTab" onClick={messageTab}> 
+           <img className='icons' src={messageLogo} alt=" closed envelope " />   
+            </div>
+         <div className="memberTab" onClick={showVerifyTab}>
+         <img className='icons' src={rectangleLogo} alt=" bird in a box" />   
+         </div>
+         <div className="profileTab" onClick={profileTab}> 
+         <img className='icons' src={profileLogo} alt=" person outline" />   
+          </div>
+       
+         {showLogout ? 
+         <div className="logoutContainer"> 
+           <div className="logoutBtn" onClick={logoutFeature}> Log out @{loggeduserName}  </div>
+         </div> 
+         : ""}
+         <div className="userInfoContainer" onClick={toggleLogout}>   
+           <img className='profileIcon' src={profilePhoto || profilePic} alt="profile picture of current user" /> 
+          
+         </div>
+         </div>
+       </div>
+       </>
     
   )
 }
