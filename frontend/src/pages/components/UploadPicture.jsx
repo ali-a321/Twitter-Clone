@@ -149,14 +149,14 @@ function UploadPicture(props) {
             <input type="file" onChange={(e)=>updateCoverPhoto(e.target.files[0])} /> 
             <span> Update Profile Picture</span>
             <input type="file" onChange={(e)=>updateProfilePhoto(e.target.files[0])} />
-            <div> 
+            <div className='editInfoBox'> 
             <form onSubmit={onSubmitName}> 
                 <input type="text"  name="firstname" value={ firstname || ""}  
                 onChange={onChangeName} autoComplete= "off"/> 
                 <button type='submit'> Update Name </button>
                 </form>
             </div>
-            <div>
+            <div  className='editInfoBox'>
                 <form onSubmit={onSubmit}> 
                 <input type="text"  name="bio" value={bio || ""}  
                 onChange={onChange} autoComplete= "off"/> 
