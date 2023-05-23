@@ -297,7 +297,7 @@ li{
   padding-left: 15px;
   padding-right: 15px;
 }
-.logoutBtn:hover{
+.logoutContainer:hover, .logoutBtn:hover{
   background-color: lightgray;
 }
 .tweetInfo{
